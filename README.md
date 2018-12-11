@@ -17,7 +17,7 @@ make
 sudo make install
 ```
 
-To use the greeter set `greeter-session=lightdm-tiny-greeter` in `/etc/lightdm/lightdm.conf`.
+Then, in `/etc/lightdm/lightdm.conf` set `greeter-session=lightdm-tiny-greeter`.
 
 ## Configuration
 
