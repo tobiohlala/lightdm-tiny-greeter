@@ -2,11 +2,11 @@
 
 a minimalists Greeter
 
-![](https://imgur.com/yhZokfM)
+![](https://i.imgur.com/yhZokfM.png))
 
 # Description
 
-tiny GTK3 LightDM Greeter with focus on code and minimalism.
+A Tiny GTK3 LightDM Greeter with focus on code and minimalism.
 
 ## Installation
 
