@@ -6,7 +6,7 @@ a minimalists Greeter
 
 # Description
 
-A Tiny GTK3 LightDM Greeter with focus on code and minimalism.
+A tiny GTK3 LightDM Greeter with focus on code and minimalism.
 
 ## Installation
 
