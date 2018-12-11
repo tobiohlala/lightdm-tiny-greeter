@@ -31,13 +31,7 @@ Configuration and customization can be done by editing `config.h`.
 
 ## Dependencies
 
-Build Dependencies
-
-- `gtk+3-devel`
-- `liblightdm-gobject`
-
-Runtime Dependencies
-
-- `gtk+3`
-- `lightdm`
+- `gtk+3` `gtk+3-devel`
+- `glib` `glib-devel`
+- `lightdm` `lightdm-devel`
 
