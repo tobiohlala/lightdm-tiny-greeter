@@ -12,7 +12,7 @@ static const gchar *style =
     "background-color: #262626;"
 "}"
 "window * {"
-    "font: regular 16px \"DejaVu Sans Mono\";"
+    "font: 16px \"DejaVu Sans Mono\";"
 "}"
 "label {"
     "color: white;"
