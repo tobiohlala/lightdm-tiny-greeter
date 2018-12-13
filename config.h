@@ -5,7 +5,7 @@ static const char *user_text = "Username";
 /* Password prompt text */
 static const char *pass_text = "Password";
 /* Session name */
-static const char *session = "default";
+static const char *session = "2bwm";
 /* GTK UI CSS */
 static const gchar *style =
 "window {"
@@ -21,6 +21,11 @@ static const gchar *style =
 "entry {"
     "background-color: white;"
     "border-radius: 10px;"
+"}"
+"#message_label {"
+    "color: red;"
+    "margin-top: 25px;"
+    "font-size: 14px;"
 "}";
 /* GTK UI XML*/
 static const gchar *ui =
@@ -33,6 +38,9 @@ static const gchar *ui =
     "<property name='resizable'>False</property>"
     "<property name='accept_focus'>False</property>"
     "<property name='decorated'>False</property>"
+    "<child>"
+      "<placeholder/>"
+    "</child>"
     "<child>"
       "<object class='GtkBox' id='login_box'>"
         "<property name='name'>login_box</property>"
@@ -84,6 +92,21 @@ static const gchar *ui =
             "<property name='expand'>False</property>"
             "<property name='fill'>True</property>"
             "<property name='position'>0</property>"
+          "</packing>"
+        "</child>"
+        "<child>"
+          "<object class='GtkLabel' id='message_label'>"
+            "<property name='name'>message_label</property>"
+            "<property name='visible'>True</property>"
+            "<property name='can_focus'>False</property>"
+            "<property name='halign'>center</property>"
+            "<property name='width_chars'>25</property>"
+            "<property name='max_width_chars'>50</property>"
+          "</object>"
+          "<packing>"
+            "<property name='expand'>False</property>"
+            "<property name='fill'>True</property>"
+            "<property name='position'>1</property>"
           "</packing>"
         "</child>"
       "</object>"

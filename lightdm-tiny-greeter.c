@@ -44,12 +44,15 @@ static LightDMGreeter *greeter;
 static GtkWidget *login_window;
 static GtkLabel  *prompt_label;
 static GtkEntry  *prompt_entry;
+static GtkLabel  *message_label;
 
 
 /* GtkEntry activate callback */
-void
+static void
 login_cb ()
 {
+
+    gtk_label_set_text (message_label, "");
 
     if (lightdm_greeter_get_is_authenticated (greeter)) {
         // authentication completed - start session
@@ -65,9 +68,19 @@ login_cb ()
 }
 
 
+/* LightDM show-message callback */
+static void
+show_message_cb (LightDMGreeter *ldm, const gchar *text, LightDMPromptType type)
+{
+
+    gtk_label_set_text (message_label, text);
+
+}
+
+
 /* LightDM show-prompt callback */
-void
-show_prompt_cb (LightDMGreeter *ldm, const char *text, LightDMPromptType type)
+static void
+show_prompt_cb (LightDMGreeter *ldm, const gchar *text, LightDMPromptType type)
 {
 
     gtk_label_set_text (prompt_label, type == LIGHTDM_PROMPT_TYPE_SECRET ? pass_text : user_text);
@@ -78,15 +91,20 @@ show_prompt_cb (LightDMGreeter *ldm, const char *text, LightDMPromptType type)
 
 
 /* LightDM authentication-complete callback */
-void
+static void
 authentication_complete_cb (LightDMGreeter *ldm)
 {
 
-    if (!lightdm_greeter_get_is_authenticated (ldm) ||
-            !lightdm_greeter_start_session_sync (ldm, session, NULL)) {
+    if (!lightdm_greeter_get_is_authenticated (ldm)) {
+        gtk_label_set_text (message_label, "Authentication Failure.");
 
-        lightdm_greeter_authenticate (ldm, NULL, NULL);
+    } else if (!lightdm_greeter_start_session_sync (ldm, session, NULL)) {
+        gtk_label_set_text (message_label, "Failed to start session.");
+
     }
+
+    lightdm_greeter_authenticate (ldm, NULL, NULL);
+
 }
 
 
@@ -124,9 +142,10 @@ main (int argc, char **argv)
     gtk_builder_add_from_string (builder, ui, -1, NULL);
 
     // get components
-    login_window = GTK_WIDGET (gtk_builder_get_object (builder, "login_window"));
-    prompt_label = GTK_LABEL  (gtk_builder_get_object (builder, "prompt_label"));
-    prompt_entry = GTK_ENTRY  (gtk_builder_get_object (builder, "prompt_entry"));
+    login_window  = GTK_WIDGET (gtk_builder_get_object (builder, "login_window"));
+    prompt_label  = GTK_LABEL  (gtk_builder_get_object (builder, "prompt_label"));
+    prompt_entry  = GTK_ENTRY  (gtk_builder_get_object (builder, "prompt_entry"));
+    message_label = GTK_LABEL  (gtk_builder_get_object (builder, "message_label"));
 
     // connect gtk signals
     g_signal_connect (prompt_entry, "activate", G_CALLBACK (login_cb), NULL);
@@ -144,6 +163,7 @@ main (int argc, char **argv)
 
     // connect lightdm signals
     g_signal_connect (greeter, "show-prompt", G_CALLBACK (show_prompt_cb), NULL);
+    g_signal_connect (greeter, "show-message", G_CALLBACK (show_message_cb), NULL);
     g_signal_connect (greeter, "authentication-complete", G_CALLBACK (authentication_complete_cb), NULL);
 
     // connect to lightdm daemon
