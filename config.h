@@ -21,6 +21,7 @@ static const gchar *style =
 "entry {"
     "background-color: white;"
     "border-radius: 10px;"
+    "box-shadow: 1px 1px white inset;"
 "}"
 "#message_label {"
     "color: red;"
