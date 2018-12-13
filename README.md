@@ -6,7 +6,7 @@ a minimalists Greeter
 
 # Description
 
-A tiny GTK3 LightDM Greeter with focus on code and minimalism.
+A tiny yet customizable GTK3 LightDM Greeter with focus on code and minimalism.
 
 ## Installation
 
@@ -16,8 +16,6 @@ cd lightdm-tiny-greeter
 make
 sudo make install
 ```
-
-Then, in `/etc/lightdm/lightdm.conf` set `greeter-session=lightdm-tiny-greeter`.
 
 ## Configuration
 
