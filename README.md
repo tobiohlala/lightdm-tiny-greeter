@@ -2,7 +2,7 @@
 
 A tiny yet customizable GTK3 LightDM Greeter with focus on code and minimalism.
 
-## Screenshots
+#### Screenshots
 
 ![default](https://i.imgur.com/yFMcb4o.png)
 ![custom1](https://i.imgur.com/YtiGpey.png)
