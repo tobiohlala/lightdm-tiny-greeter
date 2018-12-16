@@ -1,12 +1,11 @@
 # LightDM Tiny Greeter
 
-a minimalists Greeter
-
-![](https://i.imgur.com/yhZokfM.png))
-
-# Description
-
 A tiny yet customizable GTK3 LightDM Greeter with focus on code and minimalism.
+
+## Screenshots
+
+![default](https://i.imgur.com/yFMcb4o.png)
+![custom1](https://i.imgur.com/YtiGpey.png)
 
 ## Installation
 
