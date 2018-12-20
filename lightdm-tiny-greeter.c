@@ -40,7 +40,7 @@
 static LightDMGreeter *greeter;
 
 
-/* GTK components*/
+/* GTK components */
 static GtkWidget *login_window;
 static GtkLabel  *prompt_label;
 static GtkEntry  *prompt_entry;
