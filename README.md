@@ -1,5 +1,7 @@
 # LightDM Tiny Greeter
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2dbb11ae343f46e79a8f577a74670f10)](https://www.codacy.com/app/off-world/lightdm-tiny-greeter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=off-world/lightdm-tiny-greeter&amp;utm_campaign=Badge_Grade)
+
 A tiny yet customizable GTK3 LightDM Greeter with focus on code and minimalism.
 
 ![default](https://i.imgur.com/yFMcb4o.png)
