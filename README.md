@@ -27,7 +27,7 @@ Configuration and customization can be done by editing `config.h`.
 ## Setup
 
 /etc/lightdm/lightdm.conf
-```
+```config
 [Seat:*]
 ...
 greeter-session=lightdm-tiny-greeter
