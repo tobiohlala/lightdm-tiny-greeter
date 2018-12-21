@@ -1,4 +1,4 @@
-PREFIX = /usr/local
+PREFIX = /usr
 
 PACKAGE = `pkg-config --libs --cflags gtk+-3.0 liblightdm-gobject-1 gmodule-export-2.0`
 LIBS = `pkg-config --libs gtk+-3.0 liblightdm-gobject-1 gmodule-export-2.0`
