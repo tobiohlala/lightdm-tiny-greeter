@@ -20,11 +20,13 @@ sudo make install
 
 Configuration and customization can be done by editing `config.h`.
 
--   `user_text`: text when prompting for login
--   `pass_text`: text when prompting for password
--   `session`: session to start
--   `style`: ui styling via [CSS](https://developer.gnome.org/gtk3/stable/chap-css-overview.html)
--   `ui`: ui definition via [XML](https://developer.gnome.org/pygtk/stable/class-gtkbuilder.html)
+| Variable  | Meaning                                                                                 |
+|-----------|-----------------------------------------------------------------------------------------|
+| user_text | text when prompting for login                                                           |
+| pass_text | text when prompting for password                                                        |
+| session   | session to start (name of a desktop-entry located in /usr/share/xsessions)              |
+| style     | UI styling via [CSS](https://developer.gnome.org/gtk3/stable/chap-css-overview.html)    |
+| ui        | UI definition via [XML](https://developer.gnome.org/pygtk/stable/class-gtkbuilder.html) |
 
 ## Setup
 
