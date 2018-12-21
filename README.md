@@ -18,11 +18,11 @@ sudo make install
 
 Configuration and customization can be done by editing `config.h`.
 
--  `user_text`: text when prompting for login
--  `pass_text`: text when prompting for password
--  `session`: session to start
--  `style`: ui styling via [CSS](https://developer.gnome.org/gtk3/stable/chap-css-overview.html)
--  `ui`: ui definition via [XML](https://developer.gnome.org/pygtk/stable/class-gtkbuilder.html)
+- `user_text`: text when prompting for login
+- `pass_text`: text when prompting for password
+- `session`: session to start
+- `style`: ui styling via [CSS](https://developer.gnome.org/gtk3/stable/chap-css-overview.html)
+- `ui`: ui definition via [XML](https://developer.gnome.org/pygtk/stable/class-gtkbuilder.html)
 
 ## Setup
 
@@ -35,7 +35,6 @@ greeter-session=lightdm-tiny-greeter
 
 ## Dependencies
 
--  `gtk+3` `gtk+3-devel`
--  `glib` `glib-devel`
--  `lightdm` `lightdm-devel`
-
+- `gtk+3` `gtk+3-devel`
+- `glib` `glib-devel`
+- `lightdm` `lightdm-devel`
