@@ -5,7 +5,6 @@
 A tiny yet customizable GTK3 LightDM Greeter with focus on code and minimalism.
 
 ![default](https://i.imgur.com/yFMcb4o.png)
-![custom1](https://i.imgur.com/YtiGpey.png)
 
 ## Installation
 
@@ -42,3 +41,11 @@ greeter-session=lightdm-tiny-greeter
 -   `gtk+3` `gtk+3-devel`
 -   `glib` `glib-devel`
 -   `lightdm` `lightdm-devel`
+
+## Showcase
+
+![screenshot1](https://i.imgur.com/YtiGpey.png)  
+[#1](https://gist.github.com/off-world/573ea3b79829fb31ce7b27c337e62926) by @off-world
+
+![screenshot2](https://i.imgur.com/sLk0j95.png)  
+[#2](https://gist.github.com/off-world/ad853fb1faca2c6c67b332ff3d3a7a21) by @off-world
