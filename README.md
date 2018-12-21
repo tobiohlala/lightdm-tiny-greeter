@@ -47,5 +47,8 @@ greeter-session=lightdm-tiny-greeter
 ![screenshot1](https://i.imgur.com/YtiGpey.png)  
 [#1](https://gist.github.com/off-world/573ea3b79829fb31ce7b27c337e62926)
 
-![screenshot2](https://i.imgur.com/sLk0j95.png)  
-[#2](https://gist.github.com/off-world/ad853fb1faca2c6c67b332ff3d3a7a21)
+![screenshot2](https://i.imgur.com/AflYGVT.png)  
+[#2](https://gist.github.com/off-world/fd4c5b183dc6e0e4d3ada95131969a45)
+
+![screenshot3](https://i.imgur.com/sLk0j95.png)  
+[#3](https://gist.github.com/off-world/ad853fb1faca2c6c67b332ff3d3a7a21)
