@@ -17,7 +17,7 @@ sudo make install
 
 ## Configuration
 
-Configuration and customization can be done by editing `config.h`.
+All configuration and customization goes into `config.h` prior compiling.
 
 | Variable  | Meaning                                                                                 |
 |-----------|-----------------------------------------------------------------------------------------|
