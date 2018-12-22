@@ -17,7 +17,7 @@ sudo make install
 
 ## Configuration
 
-All configuration and customization goes into `config.h` prior compiling.
+All configuration and customization goes into `config.h` prior compilation.
 
 | Variable  | Meaning                                                                                 |
 |-----------|-----------------------------------------------------------------------------------------|
