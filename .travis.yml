@@ -1,0 +1,12 @@
+language: c
+
+compiler:
+    - gcc
+
+before_install:
+    - sudo apt-get install -y liblightdm-gobject-1-dev
+
+script:
+    - make
+    - sudo make install
+
