@@ -38,9 +38,9 @@ greeter-session=lightdm-tiny-greeter
 
 ## Dependencies
 
--   `gtk+3` `gtk+3-devel`
--   `glib` `glib-devel`
--   `lightdm` `lightdm-devel`
+-   `glib` `libglib-2.0`
+-   `gtk3` `libgtk-3 (>= 3.22)`
+-   `lightdm` `liblightdm-gobject-1 (>= 1.19.1)`
 
 ## Showcase
 
