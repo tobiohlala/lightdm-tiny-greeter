@@ -55,3 +55,6 @@ greeter-session=lightdm-tiny-greeter
 
 ![screenshot4](https://i.imgur.com/Ci9RJ0y.png)  
 [#4](https://gist.github.com/alaughlin/f7eac0c88d2939428dcd2ffb67353f1a)
+
+![screenshot5](https://i.imgur.com/7lSF0gC.png)  
+[#5](https://gist.github.com/off-world/f0d1e6eb52d2a53584d7f5ba11599a73)
