@@ -9,7 +9,7 @@ A tiny yet customizable GTK3 LightDM Greeter with focus on code and minimalism.
 ## Installation
 
 ```bash
-git clone https://github.com/off-world/lightdm-tiny-greeter
+git clone https://github.com/tobiohlala/lightdm-tiny-greeter
 cd lightdm-tiny-greeter
 make
 sudo make install
